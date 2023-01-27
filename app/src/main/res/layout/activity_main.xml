@@ -1,0 +1,140 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A1CEF1"
+        tools:context=".MainActivity">
+        <!-- You can add all other view elements such as editText, button, spinner and such
+         within the tag <layout></layout> -->
+
+        <Button
+            android:id="@+id/StudentMainbutton"
+            android:layout_width="285dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:text="Student Main Activity"
+            android:backgroundTint="#0040DD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RegActivity" />
+
+        <Button
+            android:id="@+id/FirstActivity"
+            android:layout_width="285dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="144dp"
+            android:text="First Activity"
+            android:backgroundTint="#0040DD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ThreadedActivity"
+            android:layout_width="285dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="32dp"
+            android:text="Threaded Activity"
+            android:backgroundTint="#0040DD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstActivity" />
+
+        <Button
+            android:id="@+id/RegActivity"
+            android:layout_width="285dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:text="Registration Activity"
+            android:backgroundTint="#0040DD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ThreadedActivity" />
+
+        <Button
+            android:id="@+id/SecActCamera"
+            android:layout_width="285dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:text="Second Activity Camera"
+            android:backgroundTint="#0040DD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StudentMainbutton" />
+
+        <Button
+            android:id="@+id/SearchStudID"
+            android:layout_width="285dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:text="Search Student By ID"
+            android:backgroundTint="#0040DD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SecActCamera" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIN ACTIVITY"
+            android:textAlignment="center"
+            android:textColor="#085951"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/FirstActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nurul Asyqin Binti Haris - B032010229"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.957" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#05C6B4"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
